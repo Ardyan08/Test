@@ -1,0 +1,15 @@
+nubit installer 
+
+tmux new -s nubit
+curl -sL1 https://nubit.sh | bash
+
+
+wait 15 menit paste pubkey ndek 
+https://alpha.nubit.org/#/
+
+get pubkey 
+
+NETWORK=nubit-alphatestnet-1
+NODE_TYPE=light
+store=$HOME/.nubit-${NODE_TYPE}-${NETWORK}/
+./nubit-node/nkey list --p2p.network $NETWORK --node.type $NODE_TYPE
